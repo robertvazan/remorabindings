@@ -7,8 +7,10 @@
 [![Build status](https://github.com/robertvazan/remorabindings/workflows/build/badge.svg)](https://github.com/robertvazan/remorabindings/actions/workflows/build.yml)
 [![Test coverage](https://codecov.io/gh/robertvazan/remorabindings/branch/master/graph/badge.svg)](https://codecov.io/gh/robertvazan/remorabindings)
 
-Remora Bindings is a Java library that offers two-way data bindings
-that glue UI widgets to data sources in [PushMode](https://pushmode.machinezoo.com/) apps.
+Remora Bindings is a Java library that offers two-way data bindings that glue UI widgets to data sources.
+Contrary to most other binding APIs, Remora Bindings does not offer any built-in change notification or reactivity
+and instead relies on [transparent reactivity](https://blog.machinezoo.com/transparent-reactive-programming)
+offered by libraries like [Hookless](https://hookless.machinezoo.com/).
 
 More on [homepage](https://remorabindings.machinezoo.com/).
 
