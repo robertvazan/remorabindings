@@ -4,7 +4,7 @@ module com.machinezoo.remorabindings {
     requires com.machinezoo.stagean;
     requires com.machinezoo.noexception;
     /*
-     * Reactive, because we accept arbitrary ReactivePreferences.
+     * Transitive, because we accept arbitrary ReactivePreferences.
      */
     requires transitive com.machinezoo.hookless.prefs;
     requires com.machinezoo.pmsite;
