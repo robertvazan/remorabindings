@@ -5,7 +5,7 @@
 
 	<groupId>com.machinezoo.remorabindings</groupId>
 	<artifactId>remorabindings</artifactId>
-	<version>0.1.0</version>
+	<version>0.2.0</version>
 
 	<name>Remora Bindings</name>
 	<description>Two-way data bindings used to bind UI widgets to data sources in pushmode apps.</description>
