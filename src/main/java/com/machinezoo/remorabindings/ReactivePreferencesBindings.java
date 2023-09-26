@@ -16,4 +16,7 @@ public class ReactivePreferencesBindings {
         return new ReactivePreferencesStringBinding(preferences, key, def);
     }
     public static IntBinding bindInt(ReactivePreferences preferences, String key, int def) { return new ReactivePreferencesIntBinding(preferences, key, def); }
+    public static BooleanBinding bindBoolean(ReactivePreferences preferences, String key, boolean def) {
+        return new ReactivePreferencesBooleanBinding(preferences, key, def);
+    }
 }

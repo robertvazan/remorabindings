@@ -12,6 +12,7 @@ public interface NullableStringBinding extends NullableBinding<String> {
     static <K> NullableStringBinding bind(Map<K, String> map, K key) { return downcast(NullableBinding.bind(map, key)); }
     default NullableIntBinding encodeInt() { return asOptional().encodeInt().asNullable(); }
     default NullableIntBinding encodeClearableInt(OptionalInt def) { return asOptional().encodeClearableInt(def).asNullable(); }
+    default NullableBooleanBinding encodeBoolean() { return encodeInt().encodeBoolean(); }
     default <T extends Enum<T>> NullableBinding<T> encodeEnum(Class<T> type) { return asOptional().encodeEnum(type).asNullable(); }
     default <T extends Enum<T>> NullableBinding<T> encodeClearableEnum(Class<T> type, T def) {
         return asOptional().encodeClearableEnum(type, def).asNullable();

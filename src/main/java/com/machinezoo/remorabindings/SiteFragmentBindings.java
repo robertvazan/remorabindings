@@ -16,4 +16,7 @@ public class SiteFragmentBindings {
         return ReactivePreferencesBindings.bindString(SiteFragment.get().preferences(), key, def);
     }
     public static IntBinding bindInt(String key, int def) { return ReactivePreferencesBindings.bindInt(SiteFragment.get().preferences(), key, def); }
+    public static BooleanBinding bindBoolean(String key, boolean def) {
+        return ReactivePreferencesBindings.bindBoolean(SiteFragment.get().preferences(), key, def);
+    }
 }

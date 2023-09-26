@@ -11,4 +11,5 @@ public interface NullableIntBinding extends Supplier<Integer> {
     default NullableBinding<Integer> upcast() { return new NullableIntBindingUpcast(this); }
     default IntBinding orElse(int def) { return IntBinding.downcast(upcast().orElse(def)); }
     default NullableIntBinding or(Supplier<Integer> fallback) { return downcast(upcast().or(fallback)); }
+    default NullableBooleanBinding encodeBoolean() { return new NullableBooleanInIntBinding(this); }
 }
